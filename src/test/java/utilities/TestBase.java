@@ -9,7 +9,6 @@ import org.testng.annotations.BeforeMethod;
 import java.time.Duration;
 
 public abstract class TestBase {
-    // abstract yapmamizin sebebi bu class'dan obje uretilmesinin onune gecmektir.
     protected WebDriver driver;
     @BeforeMethod
     public void setUp(){
@@ -22,6 +21,6 @@ public abstract class TestBase {
     @AfterMethod
     public void tearDown(){
 
-        //driver.close();
+        driver.close();
     }
 }
